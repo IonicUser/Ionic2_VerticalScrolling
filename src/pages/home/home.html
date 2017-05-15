@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-slides #newAdSlider pager="true" direction='vertical' effect="slide"  parallax="true" loop="true" spaceBetween="-400px" (ionSlideDrag)="onSlideChanged()">
+
+    <ion-slide [ngClass]="currentIndex==1?activeIndex:passiveIndex">
+
+      <img  src="assets/images/splash.png" />
+    </ion-slide>
+
+    <ion-slide [ngClass]="currentIndex==2?activeIndex:passiveIndex">
+      <img  src="assets/images/icon.png" />
+    </ion-slide>
+
+    <ion-slide [ngClass]="currentIndex==3?activeIndex:passiveIndex">
+      <img  src="assets/images/splash.png" />
+    </ion-slide>
+    <ion-slide [ngClass]="currentIndex==4?activeIndex:passiveIndex">
+      <img  src="assets/images/icon.png" />
+    </ion-slide>
+
+    <ion-slide [ngClass]="currentIndex==5?activeIndex:passiveIndex">
+      <img src="assets/images/splash.png" />
+    </ion-slide>
+
+    <ion-slide [ngClass]="currentIndex==6?activeIndex:passiveIndex">
+      <img  src="assets/images/icon.png" />
+    </ion-slide>
+
+    <ion-slide [ngClass]="currentIndex==7?activeIndex:passiveIndex">
+      <img  src="assets/images/splash.png" />
+    </ion-slide>
+
+    <ion-slide [ngClass]="currentIndex==8?activeIndex:passiveIndex">
+      <img  src="assets/images/icon.png" />
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>
